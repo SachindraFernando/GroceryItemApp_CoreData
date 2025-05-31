@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GroceryAppCoreDataApp: App {
+    let storeManager = StoreManager.shared
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(storagemanager: storeManager)
+                .environment(\.managedObjectContext, storeManager.context) // 🔥 This connects the CoreData engine to SwiftUI
         }
     }
 }

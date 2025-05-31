@@ -11,6 +11,13 @@
 		F6404EC82DEA5700000BA488 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6404EC72DEA5700000BA488 /* ContentView.swift */; };
 		F6404ECA2DEA5700000BA488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6404EC92DEA5700000BA488 /* Assets.xcassets */; };
 		F6404ECD2DEA5700000BA488 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6404ECC2DEA5700000BA488 /* Preview Assets.xcassets */; };
+		F6404EDB2DEA5B49000BA488 /* GroceryCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6404ED92DEA5B49000BA488 /* GroceryCoreDataModel.xcdatamodeld */; };
+		F6404EDE2DEA5D0C000BA488 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6404EDD2DEA5D0C000BA488 /* StoreManager.swift */; };
+		F6404EE12DEA63A9000BA488 /* AuthHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6404EE02DEA63A9000BA488 /* AuthHeader.swift */; };
+		F6404EE32DEA6404000BA488 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6404EE22DEA6404000BA488 /* BackButton.swift */; };
+		F6404EE52DEA6449000BA488 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6404EE42DEA6449000BA488 /* Theme.swift */; };
+		F6404EE72DEA66D7000BA488 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6404EE62DEA66D7000BA488 /* CustomButtons.swift */; };
+		F6B5509A2DEAFE94002FCA9A /* GroceryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B550992DEAFE94002FCA9A /* GroceryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		F6404EC72DEA5700000BA488 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F6404EC92DEA5700000BA488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6404ECC2DEA5700000BA488 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6404EDA2DEA5B49000BA488 /* GroceryCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GroceryCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		F6404EDD2DEA5D0C000BA488 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		F6404EE02DEA63A9000BA488 /* AuthHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeader.swift; sourceTree = "<group>"; };
+		F6404EE22DEA6404000BA488 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		F6404EE42DEA6449000BA488 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F6404EE62DEA66D7000BA488 /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
+		F6B550992DEAFE94002FCA9A /* GroceryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +65,14 @@
 		F6404EC42DEA5700000BA488 /* GroceryAppCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				F6404EDF2DEA6391000BA488 /* Utilities */,
+				F6404EDC2DEA5CD1000BA488 /* StoreManagers */,
 				F6404EC52DEA5700000BA488 /* GroceryAppCoreDataApp.swift */,
 				F6404EC72DEA5700000BA488 /* ContentView.swift */,
 				F6404EC92DEA5700000BA488 /* Assets.xcassets */,
 				F6404ECB2DEA5700000BA488 /* Preview Content */,
+				F6404ED92DEA5B49000BA488 /* GroceryCoreDataModel.xcdatamodeld */,
+				F6B550992DEAFE94002FCA9A /* GroceryDetailView.swift */,
 			);
 			path = GroceryAppCoreData;
 			sourceTree = "<group>";
@@ -65,6 +83,25 @@
 				F6404ECC2DEA5700000BA488 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6404EDC2DEA5CD1000BA488 /* StoreManagers */ = {
+			isa = PBXGroup;
+			children = (
+				F6404EDD2DEA5D0C000BA488 /* StoreManager.swift */,
+			);
+			path = StoreManagers;
+			sourceTree = "<group>";
+		};
+		F6404EDF2DEA6391000BA488 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F6404EE02DEA63A9000BA488 /* AuthHeader.swift */,
+				F6404EE22DEA6404000BA488 /* BackButton.swift */,
+				F6404EE42DEA6449000BA488 /* Theme.swift */,
+				F6404EE62DEA66D7000BA488 /* CustomButtons.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +174,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6404EE72DEA66D7000BA488 /* CustomButtons.swift in Sources */,
+				F6404EDB2DEA5B49000BA488 /* GroceryCoreDataModel.xcdatamodeld in Sources */,
+				F6404EDE2DEA5D0C000BA488 /* StoreManager.swift in Sources */,
+				F6404EE32DEA6404000BA488 /* BackButton.swift in Sources */,
+				F6404EE12DEA63A9000BA488 /* AuthHeader.swift in Sources */,
 				F6404EC82DEA5700000BA488 /* ContentView.swift in Sources */,
 				F6404EC62DEA5700000BA488 /* GroceryAppCoreDataApp.swift in Sources */,
+				F6404EE52DEA6449000BA488 /* Theme.swift in Sources */,
+				F6B5509A2DEAFE94002FCA9A /* GroceryDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +388,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6404ED92DEA5B49000BA488 /* GroceryCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6404EDA2DEA5B49000BA488 /* GroceryCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = F6404EDA2DEA5B49000BA488 /* GroceryCoreDataModel.xcdatamodel */;
+			name = GroceryCoreDataModel.xcdatamodeld;
+			path = /Users/sachindrafernando/Documents/Projects/GroceryAppCoreData/GroceryAppCoreData/GroceryCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F6404EBA2DEA56FF000BA488 /* Project object */;
 }
